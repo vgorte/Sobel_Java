@@ -3,16 +3,15 @@ import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 
-
 public class Sobel {
 	
-	static int [] sobel_x = 	{1,	0, 	-1, 
-					 			2,	0,	-2,
-					 			1,	0,	-1};
+	static int [] sobel_y = 	{1,	0, 	-1, 
+					 2,	0,	-2,
+					 1,	0,	-1};
 	
-	static int [] sobel_y = 	{1,	2, 	1, 
-		 						0,	0,	0,
-		 						-1,	-2,	-1};
+	static int [] sobel_x = 	{1,	2, 	1, 
+		 			0,	0,	0,
+					-1,	-2,	-1};
 	
 	
     public static void main(String argc[]) throws IOException {
@@ -99,6 +98,4 @@ public class Sobel {
 	    }
 	   return img;
    }
-    
-    
 }
