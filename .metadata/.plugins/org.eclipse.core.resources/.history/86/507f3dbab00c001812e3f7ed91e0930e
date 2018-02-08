@@ -5,6 +5,16 @@ import javax.imageio.ImageIO;
 
 public class Sobel {
 	
+<<<<<<< Updated upstream
+	static int [] sobel_y = 	{1,	0, 	-1, 
+					 2,	0,	-2,
+					 1,	0,	-1};
+	
+	static int [] sobel_x = 	{1,	2, 	1, 
+		 			0,	0,	0,
+					-1,	-2,	-1};
+=======
+<<<<<<< HEAD
 	static int [] sobel_y =    {1,	0, 	-1, 
 					 			2,	0,	-2,
 					 			1,	0,	-1};
@@ -12,6 +22,16 @@ public class Sobel {
 	static int [] sobel_x = 	{1,  2,  1, 
 		 						 0,	 0,	 0,
 		 						-1,	-2,	-1};
+=======
+	static int [] sobel_y = 	{1,	0, 	-1, 
+					 2,	0,	-2,
+					 1,	0,	-1};
+	
+	static int [] sobel_x = 	{1,	2, 	1, 
+		 			0,	0,	0,
+					-1,	-2,	-1};
+>>>>>>> origin/master
+>>>>>>> Stashed changes
 	
 	
     public static void main(String argc[]) throws IOException {
@@ -105,4 +125,12 @@ public class Sobel {
 	    }
 	   return img;
    }
+<<<<<<< Updated upstream
 }
+=======
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> origin/master
+>>>>>>> Stashed changes

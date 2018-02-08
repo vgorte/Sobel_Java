@@ -3,6 +3,7 @@ import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 
+
 public class Sobel {
 	
 	static int [] sobel_y =    {1,	0, 	-1, 
@@ -15,16 +16,11 @@ public class Sobel {
 	
 	
     public static void main(String argc[]) throws IOException {
-    	System.out.println("Loaing Image...");
         BufferedImage imgIn = ImageIO.read(new File("Lenna.png"));
-        System.out.println("Done!" );
         
-        System.out.println("Transforming to greyscale image..." );
         BufferedImage imgGrey = greyscale(imgIn);
         ImageIO.write(imgGrey, "PNG", new File("greyscale.png"));
-        System.out.println("Done!" );
-
-        System.out.println("Edgedetection in progress... " );
+        
         BufferedImage edgesX = edgeDetection(imgGrey, sobel_x);
         ImageIO.write(edgesX, "PNG", new File("edgesX.png"));
 
@@ -33,8 +29,6 @@ public class Sobel {
 
         BufferedImage sobel = sobel(edgesX,edgesY);
         ImageIO.write(sobel, "PNG", new File("sobel.png"));
-        System.out.println("Done!" );
-
     }
     
     private static BufferedImage sobel (BufferedImage edgesX, BufferedImage edgesY){
