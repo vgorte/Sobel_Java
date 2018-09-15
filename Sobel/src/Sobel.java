@@ -15,7 +15,7 @@ public class Sobel {
 	
 	
     public static void main(String argc[]) throws IOException {
-    	System.out.println("Loaing Image...");
+    	System.out.println("Loading Image...");
         BufferedImage imgIn = ImageIO.read(new File("Lenna.png"));
         System.out.println("Done!" );
         
